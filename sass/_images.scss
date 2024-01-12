@@ -1,0 +1,23 @@
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.full-width-image {
+	width: 100%;
+}
+
+.full-width-image-blog {
+	width: 50%;
+	margin: 2rem auto;
+	display: flex;
+	justify-content: center;
+	border-radius: 4rem;
+}
+
+.logo {
+	display: block;
+	margin-block: 2rem;
+	width: 100%;
+	max-width: 20rem;
+}

@@ -1,0 +1,65 @@
+@use 'globals' as *;
+
+a {
+  color: var(--link-color);
+  &:hover,
+  &:focus {
+    color: var(--active-link-color);
+  }
+}
+
+$mobile-menu-max: toRem(500);
+
+$mobile-menu: 'width <= #{$mobile-menu-max}';
+$desktop-menu: 'width > #{$mobile-menu-max}';
+
+.main-navigation {
+  text-transform: uppercase;
+  font-family: var(--font-karla);
+  margin-inline-start: auto;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--honeydew);
+    color: var(--link-color);
+    box-shadow: var(--shadow-4);
+    border: 1px solid black;
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    &:hover,
+    &:focus-visible {
+      color: var(--active-link-color);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    background-color: palegoldenrod;
+    gap: 0.5em;
+    padding: var(--size-fluid-3);
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    transition: color 0.5s ease;
+    font-size: 2rem;
+    &--current,
+    &:hover,
+    &:focus {
+      color: var(--black);
+    }
+  }
+}

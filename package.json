@@ -1,0 +1,44 @@
+{
+	"name": "next",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@changey/react-leaflet-markercluster": "^4.0.0-rc1",
+		"@supabase/supabase-js": "^2.39.2",
+		"@types/node": "20.10.7",
+		"@types/react": "18.2.47",
+		"@types/react-dom": "18.2.18",
+		"axios": "^1.6.5",
+		"client-only": "^0.0.1",
+		"downshift": "^8.3.1",
+		"eslint": "8.56.0",
+		"eslint-config-next": "14.0.4",
+		"graphql": "^16.8.1",
+		"graphql-request": "^6.1.0",
+		"next": "^14.0.4",
+		"open-props": "^1.6.17",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-icons": "^4.12.0",
+		"react-leaflet": "^4.2.1",
+		"redaxios": "^0.5.1",
+		"server-only": "^0.0.1",
+		"typescript": "5.3.3",
+		"zod": "^3.22.4",
+		"zod-form-data": "^2.0.2"
+	},
+	"devDependencies": {
+		"@total-typescript/ts-reset": "^0.5.1",
+		"@types/leaflet": "^1.9.8",
+		"cssnano": "^6.0.3",
+		"postcss-jit-props": "^1.0.14",
+		"postcss-preset-env": "^9.3.0",
+		"sass": "^1.69.7"
+	}
+}
